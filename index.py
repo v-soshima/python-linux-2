@@ -3,9 +3,9 @@ from bottle import route, run, Response, template
 import json
 import image
 
-def call_service():
-    directoryName = 'photos'
-    image.process(directoryName)
+#def call_service():
+    #directoryName = 'photos'
+    #image.process(directoryName)
 
 @route('/')
 def index():
