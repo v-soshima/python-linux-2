@@ -3,15 +3,15 @@ from bottle import route, run, Response, template
 import json
 import image
 
-#def call_service():
-    #directoryName = 'photos'
-    #image.process(directoryName)
+def call_service():
+    directoryName = 'photos'
+    image.process(directoryName)
 
 @route('/')
 def index():
     """Home page"""
     title = "Image Processor App"
-    call_service()
+    #call_service()
     return template('index.tpl',data="Request completed!", title=title)
 
 if __name__ == '__main__':
